@@ -110,7 +110,7 @@ Example: cypress/integration/Google.feature
 Feature: Google Main Page
 
   I want to open a search engine
-  
+
   @focus
   Scenario: Opening a search engine page
     Given I open Google page
@@ -163,7 +163,7 @@ Given('I open Google page', () => {
 })
 ```
 
-This is a good place to put *before/beforeEach/after/afterEach* hooks related to **that particular feature**. This is incredibly hard to get right with pure cucumber.  
+This is a good place to put *before/beforeEach/after/afterEach* hooks related to **that particular feature**. This is incredibly hard to get right with pure cucumber.
 
 #### Reusable step definitions
 
@@ -267,7 +267,7 @@ Then("counter equals {int}", value => {
 
 ```gherkin
 Feature: Background Section
-  
+
    Background:
     Given counter has been reset
 
@@ -496,7 +496,7 @@ module.exports = (on) => {
   options.browserifyOptions.plugin.unshift(['tsify']);
   // Or, if you need a custom tsconfig.json for your test files:
   // options.browserifyOptions.plugin.unshift(['tsify', {project: 'path/to/other/tsconfig.json'}]);
-  
+
   on("file:preprocessor", cucumber(options));
 };
 ```
